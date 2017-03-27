@@ -1,0 +1,12 @@
+{
+  "name": "angular4-products",
+  "description": "Products application built with Angular4",
+  "version": "1.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.3.7"
+  },
+  "devDependencies": {}
+}
