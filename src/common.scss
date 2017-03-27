@@ -1,0 +1,88 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin: 40px 0;
+  padding: 0 15%;
+}
+
+.page-title {
+  margin-bottom: 40px;
+}
+
+.table {
+  img {
+    height: 5rem;
+  }
+  tbody tr td {
+    vertical-align: middle;
+  }
+}
+
+.form-element {
+  @extend .form-group;
+  @extend .col-sm-12;
+  @extend .col-md-6;
+}
+
+.form-navigation {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn .badge {
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
+
+.btn-action {
+  // .button-variant($white; $gray; $gray);
+  width: 22%;
+  padding: 0.5rem 0;
+
+  .icon {
+    @extend .glyphicon;
+    // @extend .animated;
+    @include font-size(70px);
+    // animation-iteration-count: infinite;
+  }
+
+  &.yay {
+    // .button-variant($white; $cyan; $cyan);
+    color: $white;
+    background-color: $cyan;
+    border-color: $cyan;
+    .icon {
+      // @extend .pulse;
+      &.thumbs {
+        @extend .glyphicon-thumbs-up;
+      }
+      &.envelope {
+        @extend .glyphicon-envelope;
+      }
+      &.file {
+        @extend .glyphicon-file;
+      }
+    }
+  }
+
+  &.nay {
+    // .button-variant($white; $magenta; $magenta);
+    color: $white;
+    background-color: $magenta;
+    border-color: $magenta;
+    .icon {
+      // @extend .pulse;
+      &.thumbs {
+        @extend .glyphicon-thumbs-down;
+      }
+      &.envelope {
+        @extend .glyphicon-envelope;
+      }
+      &.file {
+        @extend .glyphicon-file;
+      }
+    }
+  }
+}

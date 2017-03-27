@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/" !default;
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "variables";
+@import "mixins";
+@import "common";
