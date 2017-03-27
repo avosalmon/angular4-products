@@ -15,7 +15,7 @@
     <tbody>
       <tr *ngFor="let product of products">
         <!-- <td><button class="btn btn-sm btn-default checkbox-btn" ng-class="{ active: vm.isSelected(product.id) }" ng-click="vm.isSelected(product.id) ? vm.deselect(product.id) : vm.select(product.id)"><i class="glyphicon glyphicon-ok icon"></i></button></td> -->
-        <td><img class="image" src="imageUrl(product.image_uri)" /></td>
+        <td><img class="image" src="{{ imageUrl(product.image_uri) }}" /></td>
         <td><a [routerLink]="['/edit', product.id]">{{ product.product_name }}</a></td>
         <td nowrap="nowrap">{{ product.model_number }}</td>
         <td class="center">{{ displayState(product.display_state) }}</td>

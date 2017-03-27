@@ -12,7 +12,7 @@ export class ProductsApi {
 
   private headers = new Headers({
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer TiBsrCH5D72jvvxu0RXFwu9xgV1BakDAHGc5tPFHBj7FTx41wr9WfprPKsEo'
+    'Authorization': 'Bearer '
   });
 
   constructor(private http: Http) { }
