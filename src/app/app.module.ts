@@ -6,9 +6,9 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ProductListComponent } from './products/product-list/product-list.component';
-import { ProductEditComponent } from './products/product-edit/product-edit.component';
-import { ProductCreateComponent } from './products/product-create/product-create.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
+import { ProductCreateComponent } from './components/product-create/product-create.component';
 
 @NgModule({
   declarations: [
