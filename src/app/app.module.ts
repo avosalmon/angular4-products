@@ -10,6 +10,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
 import { ProductCreateComponent } from './components/product-create/product-create.component';
 
+import { ProductsApi } from './services/products.api';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,7 @@ import { ProductCreateComponent } from './components/product-create/product-crea
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ ProductsApi ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
